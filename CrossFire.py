@@ -1,6 +1,5 @@
 # CrossFire - by David Christian
-# This source code is free software, and licensed under the GPL v3
-# Please see the LICENSE.TXT file or http://www.gnu.org/licenses/gpl.html for more information
+# This source code is free software, and licensed under the MIT License
 
 import pygame, random, os, pygame.mixer
 from pygame.locals import *
