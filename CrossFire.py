@@ -395,14 +395,14 @@ def main():
                         if invaders[count].active == False:                                                    
                             if direction == 0: # from left
                                 invaders[count].rect.left = -32
-                                invaders[count].rect.top = random.randint(0, (SCREEN_HEIGHT - 64) / 32) * 32
+                                invaders[count].rect.top = random.randint(0, (SCREEN_HEIGHT - 64))
                                 invaders[count].vector_x = max_baddie_speed
                                 invaders[count].vector_y = 0
                                 invaders[count].active = True
                                 break
                             else:
                                 # from top
-                                invaders[count].rect.left = random.randint(0, (SCREEN_WIDTH - 64) / 32) * 32
+                                invaders[count].rect.left = random.randint(0, (SCREEN_WIDTH - 64))
                                 invaders[count].rect.top = -32
                                 invaders[count].vector_x = 0
                                 invaders[count].vector_y = max_baddie_speed
@@ -413,7 +413,7 @@ def main():
                         if drones[count].active == False:                                                                            
                             if direction == 0: # from left
                                 drones[count].rect.left = -32
-                                drones[count].rect.top = random.randint(0, (SCREEN_HEIGHT - 64) / 32) * 32
+                                drones[count].rect.top = random.randint(0, (SCREEN_HEIGHT - 64))
                                 drones[count].vector_x = max_baddie_speed
                                 drones[count].vector_y = 0
                                 drones[count].active = True
@@ -421,7 +421,7 @@ def main():
                                 break
                             else:
                                 # from top
-                                drones[count].rect.left = random.randint(0, (SCREEN_WIDTH - 64) / 32) * 32
+                                drones[count].rect.left = random.randint(0, (SCREEN_WIDTH - 64))
                                 drones[count].rect.top = -32
                                 drones[count].vector_x = 0
                                 drones[count].vector_y = max_baddie_speed
@@ -433,14 +433,14 @@ def main():
                         if red_invaders[count].active == False:                                                                            
                             if direction == 0: # from left
                                 red_invaders[count].rect.left = -32
-                                red_invaders[count].rect.top = random.randint(0, (SCREEN_HEIGHT - 64) / 32) * 32
+                                red_invaders[count].rect.top = random.randint(0, (SCREEN_HEIGHT - 64))
                                 red_invaders[count].vector_x = max_baddie_speed
                                 red_invaders[count].vector_y = random.randint(0, 1) - random.randint(0, 1)
                                 red_invaders[count].active = True
                                 break
                             else:
                                 # from top
-                                red_invaders[count].rect.left = random.randint(0, (SCREEN_WIDTH - 64) / 32) * 32
+                                red_invaders[count].rect.left = random.randint(0, (SCREEN_WIDTH - 64))
                                 red_invaders[count].rect.top = -32
                                 red_invaders[count].vector_x = random.randint(0, 1) - random.randint(0, 1)
                                 red_invaders[count].vector_y = max_baddie_speed
